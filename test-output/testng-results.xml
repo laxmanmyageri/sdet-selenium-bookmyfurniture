@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="26484" started-at="2020-02-02T02:12:43Z" finished-at="2020-02-02T02:13:10Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="26484" started-at="2020-02-02T02:12:43Z" finished-at="2020-02-02T02:13:10Z">
+      <class name="test.BookMyFurnitureTestCases">
+        <test-method status="PASS" signature="setExtentReport()[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="setExtentReport" is-config="true" duration-ms="188" started-at="2020-02-02T02:12:43Z" finished-at="2020-02-02T02:12:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtentReport -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="setUp" is-config="true" duration-ms="4873" started-at="2020-02-02T02:12:43Z" finished-at="2020-02-02T02:12:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateCredentials()[pri:1, instance:test.BookMyFurnitureTestCases@57536d79]" name="validateCredentials" duration-ms="6602" started-at="2020-02-02T02:12:48Z" description="Validate Credentials" finished-at="2020-02-02T02:12:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCredentials -->
+        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="captureScreenshot" is-config="true" duration-ms="101" started-at="2020-02-02T02:12:55Z" finished-at="2020-02-02T02:12:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateCredentials status=SUCCESS method=BookMyFurnitureTestCases.validateCredentials()[pri:1, instance:test.BookMyFurnitureTestCases@57536d79] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2020-02-02T02:12:55Z" finished-at="2020-02-02T02:12:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="setUp" is-config="true" duration-ms="4224" started-at="2020-02-02T02:12:55Z" finished-at="2020-02-02T02:12:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="bookASofa()[pri:2, instance:test.BookMyFurnitureTestCases@57536d79]" name="bookASofa" duration-ms="10022" started-at="2020-02-02T02:12:59Z" description="Book a Furniture" finished-at="2020-02-02T02:13:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookASofa -->
+        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="captureScreenshot" is-config="true" duration-ms="77" started-at="2020-02-02T02:13:09Z" finished-at="2020-02-02T02:13:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=bookASofa status=SUCCESS method=BookMyFurnitureTestCases.bookASofa()[pri:2, instance:test.BookMyFurnitureTestCases@57536d79] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2020-02-02T02:13:09Z" finished-at="2020-02-02T02:13:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="endReport" is-config="true" duration-ms="378" started-at="2020-02-02T02:13:09Z" finished-at="2020-02-02T02:13:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- test.BookMyFurnitureTestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
