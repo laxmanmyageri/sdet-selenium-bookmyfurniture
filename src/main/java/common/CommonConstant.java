@@ -8,6 +8,6 @@ public class CommonConstant {
 	public static String ieDriverPath=current+"\\drivers\\IEDriverServer.exe";
 	public static String configFilePath=current+"\\resources\\config.properties";
 	public static String reportPath=current+"\\test-output\\";
-	public static String screenshotPath=current+"\\Screenshots\\";
-	public static String failedScreenshotPath=current+"\\FailedTestsScreenshots\\";
+	public static String screenshotPath=current+"\\Screenshots\\PassedTestsScreenshots\\";
+	public static String failedScreenshotPath=current+"\\Screenshots\\FailedTestsScreenshots\\";
 }

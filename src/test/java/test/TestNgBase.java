@@ -97,11 +97,6 @@ public class TestNgBase {
 	}
 
 	@AfterMethod
-	public void closeBrowser() {
-		
-	}
-
-	@AfterMethod
 	public void captureScreenshot(ITestResult result) {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		try {
