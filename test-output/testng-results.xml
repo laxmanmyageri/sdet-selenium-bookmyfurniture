@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="25902" started-at="2020-02-04T01:17:14Z" finished-at="2020-02-04T01:17:40Z">
+  <suite name="Suite" duration-ms="30018" started-at="2020-02-12T22:16:55Z" finished-at="2020-02-12T22:17:25Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="25902" started-at="2020-02-04T01:17:14Z" finished-at="2020-02-04T01:17:40Z">
+    <test name="Test" duration-ms="30018" started-at="2020-02-12T22:16:55Z" finished-at="2020-02-12T22:17:25Z">
       <class name="test.BookMyFurnitureTestCases">
-        <test-method status="PASS" signature="setExtentReport()[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="setExtentReport" is-config="true" duration-ms="162" started-at="2020-02-04T01:17:14Z" finished-at="2020-02-04T01:17:14Z">
+        <test-method status="PASS" signature="setExtentReport()[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="setExtentReport" is-config="true" duration-ms="213" started-at="2020-02-12T22:16:55Z" finished-at="2020-02-12T22:16:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtentReport -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="setUp" is-config="true" duration-ms="4681" started-at="2020-02-04T01:17:14Z" finished-at="2020-02-04T01:17:19Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="setUp" is-config="true" duration-ms="8091" started-at="2020-02-12T22:16:55Z" finished-at="2020-02-12T22:17:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateCredentials()[pri:1, instance:test.BookMyFurnitureTestCases@57536d79]" name="validateCredentials" duration-ms="6473" started-at="2020-02-04T01:17:19Z" description="Validate Credentials" finished-at="2020-02-04T01:17:25Z">
+        <test-method status="PASS" signature="validateCredentials()[pri:1, instance:test.BookMyFurnitureTestCases@57536d79]" name="validateCredentials" duration-ms="6805" started-at="2020-02-12T22:17:03Z" description="Validate Credentials" finished-at="2020-02-12T22:17:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCredentials -->
-        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="captureScreenshot" is-config="true" duration-ms="135" started-at="2020-02-04T01:17:25Z" finished-at="2020-02-04T01:17:26Z">
+        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="captureScreenshot" is-config="true" duration-ms="119" started-at="2020-02-12T22:17:10Z" finished-at="2020-02-12T22:17:10Z">
           <params>
             <param index="0">
               <value>
@@ -30,15 +30,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="setUp" is-config="true" duration-ms="4069" started-at="2020-02-04T01:17:26Z" finished-at="2020-02-04T01:17:30Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="setUp" is-config="true" duration-ms="4194" started-at="2020-02-12T22:17:10Z" finished-at="2020-02-12T22:17:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="bookASofa()[pri:2, instance:test.BookMyFurnitureTestCases@57536d79]" name="bookASofa" duration-ms="9842" started-at="2020-02-04T01:17:30Z" description="Book a Furniture" finished-at="2020-02-04T01:17:40Z">
+        <test-method status="PASS" signature="bookASofa()[pri:2, instance:test.BookMyFurnitureTestCases@57536d79]" name="bookASofa" duration-ms="10029" started-at="2020-02-12T22:17:14Z" description="Book a Furniture" finished-at="2020-02-12T22:17:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bookASofa -->
-        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="captureScreenshot" is-config="true" duration-ms="128" started-at="2020-02-04T01:17:40Z" finished-at="2020-02-04T01:17:40Z">
+        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="captureScreenshot" is-config="true" duration-ms="87" started-at="2020-02-12T22:17:24Z" finished-at="2020-02-12T22:17:24Z">
           <params>
             <param index="0">
               <value>
@@ -49,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="endReport" is-config="true" duration-ms="391" started-at="2020-02-04T01:17:40Z" finished-at="2020-02-04T01:17:40Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="endReport" is-config="true" duration-ms="455" started-at="2020-02-12T22:17:24Z" finished-at="2020-02-12T22:17:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

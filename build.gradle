@@ -39,3 +39,11 @@ dependencies {
 	compile group: 'org.apache.poi', name: 'poi-ooxml', version: '4.1.0'
 }
 
+test {
+    useTestNG() {
+        dependsOn cleanTest
+        useDefaultListeners = true
+        suites 'testng.xml'
+    }
+} 
+
