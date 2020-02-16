@@ -1,5 +1,6 @@
 package test;
 
+import java.awt.AWTException;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
@@ -16,32 +17,44 @@ import pages.OrderDetailsPage;
 import pages.PaymentPage;
 import utils.ExcelUtils;
 import utils.ReadPropertiesFile;
+import utils.Reporting;
 
 public class BookMyFurnitureTestCases extends TestNgBase {
-	
-	Properties prop=ReadPropertiesFile.readPropertiesFromConfigFile();
-	private Logger log=Logger.getLogger(BookMyFurnitureTestCases.class);
-	
-	@Test(priority = 1, description = "Validate Credentials")
+
+	Properties prop = ReadPropertiesFile.readPropertiesFromConfigFile();
+	private Logger log = Logger.getLogger(BookMyFurnitureTestCases.class);
+
+	@Test(groups = { "regression" }, priority = 1, description = "Validate Credentials", enabled=true)
 	public void validateCredentials() throws Exception {
-		logger = extent.createTest("Test Case 1 - Validate Credentials");
-		log.info("**********Running Test Case 1 - Validate Credentials**************");
+		logger = Reporting.extent.createTest("Selenium.TC001.Validate Credentials");
+		log.info("**********Selenium.TC001 - Validate Credentials**************");
 		objLogin = new LoginPage(driver);
 		homePage = new HomePage(driver);
 		homePage.clickOnSignInLink();
 		Assert.assertTrue(objLogin.getLoginTitle().contains("Book My Furniture"));
 		objLogin.loginToBookMyFurniture(prop.getProperty("username"), prop.getProperty("password"));
 		BasePage.captureScreenshot(driver, "VerifyLogin");
-		log.info("**********Validated Credentials**************");
-		
+		log.info("-----Validated Credentials-------");
+
 		homePage.signoutApplication();
-		log.info("**********This is Logout**************");
-		log.info("**********Executed Test Case 1 - Validate Credentials **************");
+		log.info("-----This is Logout-----");
+		log.info("-----Executed Selenium.TC001 - Validate Credentials------");
 	}
 
-	@Test(priority = 2, description = "Book a Furniture")
-	public void bookASofa() throws Exception {
-		logger = extent.createTest("Test Case 2 - Book a furniture");
+	@Test(groups = { "regression", "functional" }, priority = 2, description = "Verify Application in new tab with Action class", enabled=true)
+	public void verifyApplicationInNewTab() throws AWTException, InterruptedException {
+		logger = Reporting.extent.createTest("Selenium.TC002.Verify Application in new tab");
+		log.info("**********Selenium.TC002 - Verify Application in new tab**************");
+		homePage = new HomePage(driver);
+		homePage.openApplicationInNewTab();
+		log.info("---Application Verified in new tab---");
+		log.info("-----Executed Selenium.TC002 - Verify Application in new tab------");
+	}
+	
+	@Test(groups = { "End to end" }, priority = 3, description = "Book a Furniture", enabled=true)
+	public void bookAFurniture() throws Exception {
+		logger = Reporting.extent.createTest("Selenium.TC003.Book a furniture");
+		log.info("**********Selenium.TC004 - Book a furniture**************");
 		objLogin = new LoginPage(driver);
 		homePage = new HomePage(driver);
 		homePage.clickOnSignInLink();
@@ -49,39 +62,47 @@ public class BookMyFurnitureTestCases extends TestNgBase {
 		objLogin.loginToBookMyFurniture(prop.getProperty("username"), prop.getProperty("password"));
 		BasePage.captureScreenshot(driver, "Login");
 		log.info("**********Login Successfull**************");
-		
+
 		homePage = new HomePage(driver);
-		String furnitureType=ExcelUtils.getCellData(CommonConstant.dataPath, "Furniture", 1, 0);
-		System.out.println("FurnitureType***** "+furnitureType);
+		String furnitureType = ExcelUtils.getCellData(CommonConstant.dataPath, "Furniture", 1, 0);
 		homePage.chooseFurnitureType(furnitureType);
-		log.info("**********Selecting menu from home page**************");
+		log.info("**********Menu Selected from home page**************");
 		BasePage.captureScreenshot(driver, "HomePage");
-		
+
 		furnituresPage = new FurnituresPage(driver);
-		String brandName=ExcelUtils.getCellData(CommonConstant.dataPath, "Furniture", 1, 1);
-		System.out.println("Brand name***** "+brandName);
+		String brandName = ExcelUtils.getCellData(CommonConstant.dataPath, "Furniture", 1, 1);
 		furnituresPage.selectBrand(brandName);
-		log.info("**********Selecting furniture**************");
+		log.info("------Furniture selected-----");
 		furnituresPage.clickOnBuyNowButton();
-		log.info("**********Buying furniture**************");
-		BasePage.captureScreenshot(driver, "SelectSofa");
-		
+		BasePage.captureScreenshot(driver, "SelectFurniture");
+
 		orderDetailsPage = new OrderDetailsPage(driver);
 		orderDetailsPage.placeOrder();
-		log.info("**********placing order**************");
-		
+		log.info("-----Order placed-----");
+
 		paymentPage = new PaymentPage(driver);
-		String paymentType=ExcelUtils.getCellData(CommonConstant.dataPath, "Furniture", 1, 2);
-		System.out.println("Payment Type***** "+paymentType);
+		String paymentType = ExcelUtils.getCellData(CommonConstant.dataPath, "Furniture", 1, 2);
+		System.out.println("Payment Type***** " + paymentType);
 		paymentPage.makePayment(paymentType);
-		log.info("**********Making Payment**************");
-		
-		orderConfirmationPage=new OrderConfirmationPage(driver);
+		log.info("-----Payment made-----");
+
+		orderConfirmationPage = new OrderConfirmationPage(driver);
 		orderConfirmationPage.verifyOrderSuccessMessage();
-		log.info("**********Verifying success message**************");
+		log.info("-----Verified success message----");
 		BasePage.captureScreenshot(driver, "OrderConfirmation");
-		
+
 		homePage.signoutApplication();
-		log.info("**********This is Logout**************");
+		log.info("----Application Logged out-----");
+		log.info("**********Executed Selenium.TC003 - Book a furniture **************");
+	}
+	
+	@Test(groups = { "regression", "functional" }, priority = 4, description = "Verify Application in new window with Action class",enabled=true)
+	public void verifyApplicationInNewWindow() throws AWTException, InterruptedException {
+		logger = Reporting.extent.createTest("Selenium.TC004.Verify Application in new window");
+		log.info("**********Selenium.TC002 - Verify Application in new tab**************");
+		homePage = new HomePage(driver);
+		homePage.openApplicationInNewWindow();
+		log.info("---Application Verified in new window---"); 
+		log.info("-----Executed Selenium.TC004 - Verify Application in new window------");
 	}
 }

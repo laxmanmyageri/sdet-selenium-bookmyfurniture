@@ -5,11 +5,10 @@
     <classes>
       <class name="test.BookMyFurnitureTestCases">
         <methods>
-          <include name="bookASofa"/>
+          <include name="verifyApplicationInNewTab"/>
           <include name="setUp"/>
           <include name="captureScreenshot"/>
           <include name="setExtentReport"/>
-          <include name="closeBrowser"/>
           <include name="endReport"/>
         </methods>
       </class> <!-- test.BookMyFurnitureTestCases -->

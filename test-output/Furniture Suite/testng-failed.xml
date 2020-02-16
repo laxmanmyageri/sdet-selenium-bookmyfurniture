@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Furniture Suite]" parallel="tests">
+  <test thread-count="5" name="Selenium(failed)" parallel="tests">
+    <classes>
+      <class name="test.BookMyFurnitureTestCases">
+        <methods>
+          <include name="verifyApplicationInNewTab"/>
+          <include name="setUp"/>
+          <include name="captureScreenshot"/>
+          <include name="setExtentReport"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- test.BookMyFurnitureTestCases -->
+    </classes>
+  </test> <!-- Selenium(failed) -->
+</suite> <!-- Failed suite [Furniture Suite] -->

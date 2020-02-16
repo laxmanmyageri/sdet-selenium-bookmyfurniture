@@ -1,59 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="30018" started-at="2020-02-12T22:16:55Z" finished-at="2020-02-12T22:17:25Z">
+  <suite name="Default suite" duration-ms="51862" started-at="2020-02-16T06:12:26Z" finished-at="2020-02-16T06:13:18Z">
     <groups>
+      <group name="functional">
+        <method signature="BookMyFurnitureTestCases.verifyApplicationInNewTab()[pri:2, instance:test.BookMyFurnitureTestCases@6ebc05a6]" name="verifyApplicationInNewTab" class="test.BookMyFurnitureTestCases"/>
+        <method signature="BookMyFurnitureTestCases.verifyApplicationInNewWindow()[pri:4, instance:test.BookMyFurnitureTestCases@6ebc05a6]" name="verifyApplicationInNewWindow" class="test.BookMyFurnitureTestCases"/>
+      </group> <!-- functional -->
+      <group name="End to end">
+        <method signature="BookMyFurnitureTestCases.bookAFurniture()[pri:3, instance:test.BookMyFurnitureTestCases@6ebc05a6]" name="bookAFurniture" class="test.BookMyFurnitureTestCases"/>
+      </group> <!-- End to end -->
+      <group name="regression">
+        <method signature="BookMyFurnitureTestCases.validateCredentials()[pri:1, instance:test.BookMyFurnitureTestCases@6ebc05a6]" name="validateCredentials" class="test.BookMyFurnitureTestCases"/>
+        <method signature="BookMyFurnitureTestCases.verifyApplicationInNewTab()[pri:2, instance:test.BookMyFurnitureTestCases@6ebc05a6]" name="verifyApplicationInNewTab" class="test.BookMyFurnitureTestCases"/>
+        <method signature="BookMyFurnitureTestCases.verifyApplicationInNewWindow()[pri:4, instance:test.BookMyFurnitureTestCases@6ebc05a6]" name="verifyApplicationInNewWindow" class="test.BookMyFurnitureTestCases"/>
+      </group> <!-- regression -->
     </groups>
-    <test name="Test" duration-ms="30018" started-at="2020-02-12T22:16:55Z" finished-at="2020-02-12T22:17:25Z">
+    <test name="Default test" duration-ms="51862" started-at="2020-02-16T06:12:26Z" finished-at="2020-02-16T06:13:18Z">
       <class name="test.BookMyFurnitureTestCases">
-        <test-method status="PASS" signature="setExtentReport()[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="setExtentReport" is-config="true" duration-ms="213" started-at="2020-02-12T22:16:55Z" finished-at="2020-02-12T22:16:55Z">
+        <test-method status="PASS" signature="setExtentReport()[pri:0, instance:test.BookMyFurnitureTestCases@6ebc05a6]" name="setExtentReport" is-config="true" duration-ms="167" started-at="2020-02-16T06:12:26Z" finished-at="2020-02-16T06:12:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtentReport -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="setUp" is-config="true" duration-ms="8091" started-at="2020-02-12T22:16:55Z" finished-at="2020-02-12T22:17:03Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.BookMyFurnitureTestCases@6ebc05a6]" name="setUp" is-config="true" duration-ms="6685" started-at="2020-02-16T06:12:27Z" finished-at="2020-02-16T06:12:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateCredentials()[pri:1, instance:test.BookMyFurnitureTestCases@57536d79]" name="validateCredentials" duration-ms="6805" started-at="2020-02-12T22:17:03Z" description="Validate Credentials" finished-at="2020-02-12T22:17:10Z">
+        <test-method status="PASS" signature="validateCredentials()[pri:1, instance:test.BookMyFurnitureTestCases@6ebc05a6]" name="validateCredentials" duration-ms="7004" started-at="2020-02-16T06:12:33Z" description="Validate Credentials" finished-at="2020-02-16T06:12:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCredentials -->
-        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="captureScreenshot" is-config="true" duration-ms="119" started-at="2020-02-12T22:17:10Z" finished-at="2020-02-12T22:17:10Z">
+        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.BookMyFurnitureTestCases@6ebc05a6]" name="captureScreenshot" is-config="true" duration-ms="391" started-at="2020-02-16T06:12:40Z" finished-at="2020-02-16T06:12:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateCredentials status=SUCCESS method=BookMyFurnitureTestCases.validateCredentials()[pri:1, instance:test.BookMyFurnitureTestCases@57536d79] output={null}]]]>
+                <![CDATA[[TestResult name=validateCredentials status=SUCCESS method=BookMyFurnitureTestCases.validateCredentials()[pri:1, instance:test.BookMyFurnitureTestCases@6ebc05a6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="setUp" is-config="true" duration-ms="4194" started-at="2020-02-12T22:17:10Z" finished-at="2020-02-12T22:17:14Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.BookMyFurnitureTestCases@6ebc05a6]" name="setUp" is-config="true" duration-ms="5519" started-at="2020-02-16T06:12:41Z" finished-at="2020-02-16T06:12:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="bookASofa()[pri:2, instance:test.BookMyFurnitureTestCases@57536d79]" name="bookASofa" duration-ms="10029" started-at="2020-02-12T22:17:14Z" description="Book a Furniture" finished-at="2020-02-12T22:17:24Z">
+        <test-method status="PASS" signature="verifyApplicationInNewTab()[pri:2, instance:test.BookMyFurnitureTestCases@6ebc05a6]" name="verifyApplicationInNewTab" duration-ms="3307" started-at="2020-02-16T06:12:46Z" description="Verify Application in new tab with Action class" finished-at="2020-02-16T06:12:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bookASofa -->
-        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="captureScreenshot" is-config="true" duration-ms="87" started-at="2020-02-12T22:17:24Z" finished-at="2020-02-12T22:17:24Z">
+        </test-method> <!-- verifyApplicationInNewTab -->
+        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.BookMyFurnitureTestCases@6ebc05a6]" name="captureScreenshot" is-config="true" duration-ms="443" started-at="2020-02-16T06:12:49Z" finished-at="2020-02-16T06:12:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=bookASofa status=SUCCESS method=BookMyFurnitureTestCases.bookASofa()[pri:2, instance:test.BookMyFurnitureTestCases@57536d79] output={null}]]]>
+                <![CDATA[[TestResult name=verifyApplicationInNewTab status=SUCCESS method=BookMyFurnitureTestCases.verifyApplicationInNewTab()[pri:2, instance:test.BookMyFurnitureTestCases@6ebc05a6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:test.BookMyFurnitureTestCases@57536d79]" name="endReport" is-config="true" duration-ms="455" started-at="2020-02-12T22:17:24Z" finished-at="2020-02-12T22:17:25Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.BookMyFurnitureTestCases@6ebc05a6]" name="setUp" is-config="true" duration-ms="5689" started-at="2020-02-16T06:12:50Z" finished-at="2020-02-16T06:12:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="bookAFurniture()[pri:3, instance:test.BookMyFurnitureTestCases@6ebc05a6]" name="bookAFurniture" duration-ms="11019" started-at="2020-02-16T06:12:56Z" description="Book a Furniture" finished-at="2020-02-16T06:13:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookAFurniture -->
+        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.BookMyFurnitureTestCases@6ebc05a6]" name="captureScreenshot" is-config="true" duration-ms="501" started-at="2020-02-16T06:13:07Z" finished-at="2020-02-16T06:13:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=bookAFurniture status=SUCCESS method=BookMyFurnitureTestCases.bookAFurniture()[pri:3, instance:test.BookMyFurnitureTestCases@6ebc05a6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.BookMyFurnitureTestCases@6ebc05a6]" name="setUp" is-config="true" duration-ms="5621" started-at="2020-02-16T06:13:07Z" finished-at="2020-02-16T06:13:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyApplicationInNewWindow()[pri:4, instance:test.BookMyFurnitureTestCases@6ebc05a6]" name="verifyApplicationInNewWindow" duration-ms="4406" started-at="2020-02-16T06:13:13Z" description="Verify Application in new window with Action class" finished-at="2020-02-16T06:13:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplicationInNewWindow -->
+        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.BookMyFurnitureTestCases@6ebc05a6]" name="captureScreenshot" is-config="true" duration-ms="470" started-at="2020-02-16T06:13:17Z" finished-at="2020-02-16T06:13:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyApplicationInNewWindow status=SUCCESS method=BookMyFurnitureTestCases.verifyApplicationInNewWindow()[pri:4, instance:test.BookMyFurnitureTestCases@6ebc05a6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:test.BookMyFurnitureTestCases@6ebc05a6]" name="endReport" is-config="true" duration-ms="616" started-at="2020-02-16T06:13:18Z" finished-at="2020-02-16T06:13:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- test.BookMyFurnitureTestCases -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
