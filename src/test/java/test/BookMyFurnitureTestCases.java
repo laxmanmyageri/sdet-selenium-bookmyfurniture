@@ -24,7 +24,7 @@ public class BookMyFurnitureTestCases extends TestNgBase {
 	Properties prop = ReadPropertiesFile.readPropertiesFromConfigFile();
 	private Logger log = Logger.getLogger(BookMyFurnitureTestCases.class);
 
-	@Test(groups = { "regression" }, priority = 1, description = "Validate Credentials", enabled=false)
+	@Test(groups = { "regression" }, priority = 1, description = "Validate Credentials", enabled=true)
 	public void validateCredentials() throws Exception {
 		logger = Reporting.extent.createTest("Selenium.TC001.Validate Credentials");
 		log.info("**********Selenium.TC001 - Validate Credentials**************");
@@ -33,7 +33,6 @@ public class BookMyFurnitureTestCases extends TestNgBase {
 		homePage.clickOnSignInLink();
 		Assert.assertTrue(objLogin.getLoginTitle().contains("Book My Furniture"));
 		objLogin.loginToBookMyFurniture(prop.getProperty("username"), prop.getProperty("password"));
-		BasePage.captureScreenshot(driver, "VerifyLogin");
 		log.info("-----Validated Credentials-------");
 
 		homePage.signoutApplication();
@@ -41,7 +40,7 @@ public class BookMyFurnitureTestCases extends TestNgBase {
 		log.info("-----Executed Selenium.TC001 - Validate Credentials------");
 	}
 
-	@Test(groups = { "regression", "functional" }, priority = 2, description = "Verify Application in new tab with Action class", enabled=false)
+	@Test(groups = { "regression", "functional" }, priority = 2, description = "Verify Application in new tab with Action class", enabled=true)
 	public void verifyApplicationInNewTab() throws AWTException, InterruptedException {
 		logger = Reporting.extent.createTest("Selenium.TC002.Verify Application in new tab");
 		log.info("**********Selenium.TC002 - Verify Application in new tab**************");
@@ -91,7 +90,7 @@ public class BookMyFurnitureTestCases extends TestNgBase {
 		log.info("**********Executed Selenium.TC003 - Book a furniture **************");
 	}
 	
-	@Test(groups = { "regression", "functional" }, priority = 4, description = "Verify Application in new window with Action class",enabled=false)
+	@Test(groups = { "regression", "functional" }, priority = 4, description = "Verify Application in new window with Action class",enabled=true)
 	public void verifyApplicationInNewWindow() throws AWTException, InterruptedException {
 		logger = Reporting.extent.createTest("Selenium.TC004.Verify Application in new window");
 		log.info("**********Selenium.TC002 - Verify Application in new tab**************");
