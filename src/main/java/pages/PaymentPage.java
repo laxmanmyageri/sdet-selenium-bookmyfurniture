@@ -22,12 +22,12 @@ public class PaymentPage {
 	public void makePayment(String paymentType) {
 		this.selectPaymentOption(paymentType);
 		this.clickOnPlaceOrderButton();
-		BasePage.captureScreenshot(driver, "Payment");
 	}
 	
 	public void selectPaymentOption(String paymentType) {
 		element = BasePage.waitforElement(driver, driver.findElement(By.xpath("//label[contains(text(),'"+paymentType+"')]")));
 		element.click();
+		BasePage.captureScreenshot(driver, "Payment");
 	}
 	
 	public void clickOnPlaceOrderButton() {

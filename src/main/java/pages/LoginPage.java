@@ -33,5 +33,6 @@ public class LoginPage {
 		this.setUserName(strUserName);
 		this.setPassword(strPasword);
 		BasePage.waitforElementThenClick(driver, driver.findElement(SIGNIN_BUTTON));
+		BasePage.captureScreenshot(driver, "Login");
 	}
 }

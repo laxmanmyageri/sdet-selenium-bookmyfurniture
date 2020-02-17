@@ -24,7 +24,7 @@ public class BookMyFurnitureTestCases extends TestNgBase {
 	Properties prop = ReadPropertiesFile.readPropertiesFromConfigFile();
 	private Logger log = Logger.getLogger(BookMyFurnitureTestCases.class);
 
-	@Test(groups = { "regression" }, priority = 1, description = "Validate Credentials", enabled=true)
+	@Test(groups = { "regression" }, priority = 1, description = "Validate Credentials", enabled=false)
 	public void validateCredentials() throws Exception {
 		logger = Reporting.extent.createTest("Selenium.TC001.Validate Credentials");
 		log.info("**********Selenium.TC001 - Validate Credentials**************");
@@ -41,7 +41,7 @@ public class BookMyFurnitureTestCases extends TestNgBase {
 		log.info("-----Executed Selenium.TC001 - Validate Credentials------");
 	}
 
-	@Test(groups = { "regression", "functional" }, priority = 2, description = "Verify Application in new tab with Action class", enabled=true)
+	@Test(groups = { "regression", "functional" }, priority = 2, description = "Verify Application in new tab with Action class", enabled=false)
 	public void verifyApplicationInNewTab() throws AWTException, InterruptedException {
 		logger = Reporting.extent.createTest("Selenium.TC002.Verify Application in new tab");
 		log.info("**********Selenium.TC002 - Verify Application in new tab**************");
@@ -58,23 +58,19 @@ public class BookMyFurnitureTestCases extends TestNgBase {
 		objLogin = new LoginPage(driver);
 		homePage = new HomePage(driver);
 		homePage.clickOnSignInLink();
-		Assert.assertTrue(objLogin.getLoginTitle().contains("Book My Furniture"));
 		objLogin.loginToBookMyFurniture(prop.getProperty("username"), prop.getProperty("password"));
-		BasePage.captureScreenshot(driver, "Login");
 		log.info("**********Login Successfull**************");
 
 		homePage = new HomePage(driver);
 		String furnitureType = ExcelUtils.getCellData(CommonConstant.dataPath, "Furniture", 1, 0);
 		homePage.chooseFurnitureType(furnitureType);
 		log.info("**********Menu Selected from home page**************");
-		BasePage.captureScreenshot(driver, "HomePage");
 
 		furnituresPage = new FurnituresPage(driver);
 		String brandName = ExcelUtils.getCellData(CommonConstant.dataPath, "Furniture", 1, 1);
 		furnituresPage.selectBrand(brandName);
 		log.info("------Furniture selected-----");
 		furnituresPage.clickOnBuyNowButton();
-		BasePage.captureScreenshot(driver, "SelectFurniture");
 
 		orderDetailsPage = new OrderDetailsPage(driver);
 		orderDetailsPage.placeOrder();
@@ -89,14 +85,13 @@ public class BookMyFurnitureTestCases extends TestNgBase {
 		orderConfirmationPage = new OrderConfirmationPage(driver);
 		orderConfirmationPage.verifyOrderSuccessMessage();
 		log.info("-----Verified success message----");
-		BasePage.captureScreenshot(driver, "OrderConfirmation");
 
 		homePage.signoutApplication();
 		log.info("----Application Logged out-----");
 		log.info("**********Executed Selenium.TC003 - Book a furniture **************");
 	}
 	
-	@Test(groups = { "regression", "functional" }, priority = 4, description = "Verify Application in new window with Action class",enabled=true)
+	@Test(groups = { "regression", "functional" }, priority = 4, description = "Verify Application in new window with Action class",enabled=false)
 	public void verifyApplicationInNewWindow() throws AWTException, InterruptedException {
 		logger = Reporting.extent.createTest("Selenium.TC004.Verify Application in new window");
 		log.info("**********Selenium.TC002 - Verify Application in new tab**************");

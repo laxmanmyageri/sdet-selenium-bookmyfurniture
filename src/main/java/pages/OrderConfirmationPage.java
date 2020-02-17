@@ -27,6 +27,7 @@ public class OrderConfirmationPage {
 	
 	public void verifyOrderSuccessMessage() throws IOException {
 		element = BasePage.waitforElement(driver, driver.findElement(ORDER_SUCCEESS_MESSAGE));
+		BasePage.captureScreenshot(driver, "OrderConfirmation");
 		referenceId= BasePage.waitforElement(driver, driver.findElement(ORDER_REFERENCE_ID)).getText();
 		successMessage=element.getText();
 		Assert.assertTrue(successMessage.contains("Your order is successfully placed"), "Order is not successfull");

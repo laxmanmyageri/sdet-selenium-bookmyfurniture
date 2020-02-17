@@ -44,7 +44,9 @@ public class HomePage {
 	
 	public void chooseFurnitureType(String furnitureType) {
 		element = BasePage.waitforElement(driver, driver.findElement(By.xpath("//span[contains(text(),'"+furnitureType+"')]")));
-		element.click();		
+		BasePage.captureScreenshot(driver, "HomePage");
+		element.click();
+		Assert.assertTrue(driver.findElement(FurnituresPage.FURNITURES_LINK_TEXT).isDisplayed());
 	}
 	
 	public void openApplicationInNewTab() throws AWTException, InterruptedException {

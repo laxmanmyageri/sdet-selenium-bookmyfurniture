@@ -28,7 +28,6 @@ public class OrderDetailsPage {
 	
 	public void confirmOrder() {
 		BasePage.waitforElementThenClick(driver, driver.findElement(CONFIRM_ORDER));
-		BasePage.captureScreenshot(driver, "ConfirmOrder");
 	}
 
 }

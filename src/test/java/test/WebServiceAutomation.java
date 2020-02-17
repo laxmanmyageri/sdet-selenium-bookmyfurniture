@@ -24,7 +24,6 @@ import java.io.PrintStream;
 import java.io.StringWriter;
 import java.util.Properties;
 
-import org.apache.commons.io.output.WriterOutputStream;
 import org.json.simple.JSONObject;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
