@@ -20,8 +20,6 @@ repositories {
 
 dependencies {
 
-	//compile project(':BookMyFurniture')
-
 	testImplementation 'io.rest-assured:rest-assured:4.2.0'
 	testCompile group: 'io.rest-assured', name: 'rest-assured', version: '3.0.0'
     
