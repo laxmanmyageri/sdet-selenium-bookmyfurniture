@@ -7,7 +7,6 @@ import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import common.BasePage;
 import common.CommonConstant;
 import pages.FurnituresPage;
 import pages.HomePage;
