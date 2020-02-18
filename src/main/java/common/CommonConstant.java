@@ -9,6 +9,6 @@ public class CommonConstant {
 	public static String firefoxDriverPath = current+"\\drivers\\geckodriver.exe";
 	public static String configFilePath = current+"\\resources\\config.properties";
 	public static String reportPath = current+"\\test-output\\";
-	public static String passedScreenshotPath = current+"\\Screenshots\\PassedTestsScreenshots\\";
-	public static String failedScreenshotPath = current+"\\Screenshots\\FailedTestsScreenshots\\";	
+	public static String passedScreenshotPath = current+"\\test-output\\Screenshots\\PassedTestsScreenshots\\";
+	public static String failedScreenshotPath = current+"\\test-output\\Screenshots\\FailedTestsScreenshots\\";	
 }
