@@ -31,6 +31,7 @@ import pages.OrderDetailsPage;
 import pages.PaymentPage;
 import utils.ReadPropertiesFile;
 import utils.Reporting;
+import utils.StoreTestReports;
 
 public class TestNgBase {
 	WebDriver driver;
@@ -50,7 +51,6 @@ public class TestNgBase {
 
 	@BeforeTest
 	public void setExtentReport() {
-		prop = ReadPropertiesFile.readPropertiesFromConfigFile();
 		extentReport = new Reporting();
 		extentReport.setExtentReport();
 	}
@@ -113,5 +113,6 @@ public class TestNgBase {
 	public void endReport() {
 		extentReport = new Reporting();
 		extentReport.endExtentReport();
+		StoreTestReports.copyReportsToSharedPath();
 	}
 }

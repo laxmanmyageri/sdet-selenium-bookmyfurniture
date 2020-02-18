@@ -40,7 +40,7 @@ public class BookMyFurnitureTestCases extends TestNgBase {
 		log.info("-----Executed Selenium.TC001 - Validate Credentials------");
 	}
 
-	@Test(groups = { "regression", "functional" }, priority = 2, description = "Verify Application in new tab with Action class", enabled=false)
+	@Test(groups = { "regression", "functional" }, priority = 2, description = "Verify Application in new tab with Action class", enabled=true)
 	public void verifyApplicationInNewTab() throws AWTException, InterruptedException {
 		logger = Reporting.extent.createTest("Selenium.TC002.Verify Application in new tab");
 		log.info("**********Selenium.TC002 - Verify Application in new tab**************");
@@ -89,7 +89,7 @@ public class BookMyFurnitureTestCases extends TestNgBase {
 		log.info("**********Executed Selenium.TC003 - Book a furniture **************");
 	}
 	
-	@Test(groups = { "regression", "functional" }, priority = 4, description = "Verify Application in new window with Action class",enabled=false)
+	@Test(groups = { "regression", "functional" }, priority = 4, description = "Verify Application in new window with Action class",enabled=true)
 	public void verifyApplicationInNewWindow() throws AWTException, InterruptedException {
 		logger = Reporting.extent.createTest("Selenium.TC004.Verify Application in new window");
 		log.info("**********Selenium.TC002 - Verify Application in new tab**************");
