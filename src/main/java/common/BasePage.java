@@ -40,7 +40,7 @@ public class BasePage {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		try {
 			File source = ts.getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(source, new File(CommonConstant.screenshotPath + stepName +".png"));
+			FileUtils.copyFile(source, new File(CommonConstant.passedScreenshotPath + stepName +".png"));
 			System.out.println("Screenshot taken");
 		} catch (Exception e) {
 			System.out.println("Exception while taking screenshot " + e.getMessage());

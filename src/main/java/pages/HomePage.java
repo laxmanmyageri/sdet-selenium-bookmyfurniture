@@ -34,6 +34,7 @@ public class HomePage {
 	
 	public void clickOnSignInLink() {
 		BasePage.waitforElement(driver, driver.findElement(SIGNIN_LINK)).click();
+		Assert.assertTrue(driver.findElement(LoginPage.LOGIN_UASERNAME_INPUT).isDisplayed());
 	}
 	
 	public void signoutApplication() throws Exception {

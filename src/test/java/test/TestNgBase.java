@@ -89,7 +89,7 @@ public class TestNgBase {
 			if (ITestResult.SUCCESS == result.getStatus()) {
 				logger.log(Status.PASS,
 						MarkupHelper.createLabel(result.getName() + " ------ PASSED", ExtentColor.GREEN));
-				logger.addScreenCaptureFromPath(CommonConstant.screenshotPath);
+				logger.addScreenCaptureFromPath(CommonConstant.passedScreenshotPath);
 			} else if (ITestResult.FAILURE == result.getStatus()) {
 				File source = ts.getScreenshotAs(OutputType.FILE);
 				FileUtils.copyFile(source, new File(CommonConstant.failedScreenshotPath + "TestFailed" + ".png"));
