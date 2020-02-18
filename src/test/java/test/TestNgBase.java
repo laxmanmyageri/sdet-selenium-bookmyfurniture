@@ -10,6 +10,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -63,11 +64,14 @@ public class TestNgBase {
 			System.setProperty("webdriver.chrome.driver", CommonConstant.chromeDriverPath);
 			driver = new ChromeDriver();
 			log.info("*****Launching Chrome Browser*****");
-
 		} else if (browserName.equals("IE")) {
 			System.setProperty("webdriver.ie.driver", CommonConstant.ieDriverPath);
 			driver = new InternetExplorerDriver();
 			log.info("*****Launching IE Browser*****");
+		} else if (browserName.equals("firefox")){
+			System.setProperty("webdriver.firefox.marionette", CommonConstant.firefoxDriverPath);
+			driver = new FirefoxDriver();
+			log.info("*****Launching Firefox Browser*****");
 		} else {
 			System.out.println("No browser value is given");
 		}

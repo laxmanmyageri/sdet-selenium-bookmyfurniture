@@ -5,7 +5,7 @@
     <classes>
       <class name="test.BookMyFurnitureTestCases">
         <methods>
-          <include name="verifyApplicationInNewTab"/>
+          <include name="bookAFurniture"/>
           <include name="setUp"/>
           <include name="captureScreenshot"/>
           <include name="setExtentReport"/>

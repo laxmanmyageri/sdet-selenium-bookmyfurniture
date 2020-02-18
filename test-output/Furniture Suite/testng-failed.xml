@@ -20,9 +20,7 @@
       <class name="test.BookMyFurnitureTestCases">
         <methods>
           <include name="bookAFurniture"/>
-          <include name="verifyApplicationInNewTab"/>
           <include name="setUp"/>
-          <include name="verifyApplicationInNewWindow"/>
           <include name="captureScreenshot"/>
           <include name="validateCredentials"/>
           <include name="setExtentReport"/>

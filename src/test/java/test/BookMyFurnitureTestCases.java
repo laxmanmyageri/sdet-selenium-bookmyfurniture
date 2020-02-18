@@ -69,7 +69,6 @@ public class BookMyFurnitureTestCases extends TestNgBase {
 		String brandName = ExcelUtils.getCellData(CommonConstant.dataPath, "Furniture", 1, 1);
 		furnituresPage.selectBrand(brandName);
 		log.info("------Furniture selected-----");
-		furnituresPage.clickOnBuyNowButton();
 
 		orderDetailsPage = new OrderDetailsPage(driver);
 		orderDetailsPage.placeOrder();

@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import common.BasePage;
+import junit.framework.Assert;
 
 public class PaymentPage {
 	
@@ -32,6 +33,7 @@ public class PaymentPage {
 	
 	public void clickOnPlaceOrderButton() {
 		BasePage.waitforElementThenClick(driver, driver.findElement(PAYMENT_PLACE_ORDER_BUTTON));
+		Assert.assertTrue(driver.findElement(OrderConfirmationPage.ORDER_SUCCEESS_MESSAGE).isDisplayed());
 	}
 	
 

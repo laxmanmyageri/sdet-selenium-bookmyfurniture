@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import common.BasePage;
+import junit.framework.Assert;
 
 public class FurnituresPage {
 	
@@ -34,10 +35,12 @@ public class FurnituresPage {
 			}
 		}while(nextPage.isDisplayed() && nextPage.isEnabled());	*/	
 		element.click();
+		clickOnBuyNowButton();
 	}
   
 	public void clickOnBuyNowButton() {
 		BasePage.waitforElementThenClick(driver, driver.findElement(BUY_NOW_BUTTON));
+		Assert.assertTrue(driver.findElement(OrderDetailsPage.PLACE_ORDER_BUTTON).isDisplayed());
 	}
 	
 }
