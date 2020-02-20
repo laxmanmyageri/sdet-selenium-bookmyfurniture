@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
@@ -25,11 +26,45 @@
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=verifyPostMethodUsingPOJO status=SUCCESS method=WebServiceAutomation.verifyPostMethodUsingPOJO()[pri:1, instance:test.WebServiceAutomation@13deb50e] output={null}]]]>
+=======
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="36062" started-at="2020-02-18T18:05:04Z" finished-at="2020-02-18T18:05:40Z">
+    <groups>
+      <group name="End to end">
+        <method signature="BookMyFurnitureTestCases.bookAFurniture()[pri:3, instance:test.BookMyFurnitureTestCases@5649fd9b]" name="bookAFurniture" class="test.BookMyFurnitureTestCases"/>
+      </group> <!-- End to end -->
+      <group name="regression">
+        <method signature="BookMyFurnitureTestCases.validateCredentials()[pri:1, instance:test.BookMyFurnitureTestCases@5649fd9b]" name="validateCredentials" class="test.BookMyFurnitureTestCases"/>
+      </group> <!-- regression -->
+    </groups>
+    <test name="Default test" duration-ms="36062" started-at="2020-02-18T18:05:04Z" finished-at="2020-02-18T18:05:40Z">
+      <class name="test.BookMyFurnitureTestCases">
+        <test-method status="PASS" signature="setExtentReport()[pri:0, instance:test.BookMyFurnitureTestCases@5649fd9b]" name="setExtentReport" is-config="true" duration-ms="216" started-at="2020-02-18T18:05:04Z" finished-at="2020-02-18T18:05:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtentReport -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.BookMyFurnitureTestCases@5649fd9b]" name="setUp" is-config="true" duration-ms="8503" started-at="2020-02-18T18:05:05Z" finished-at="2020-02-18T18:05:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateCredentials()[pri:1, instance:test.BookMyFurnitureTestCases@5649fd9b]" name="validateCredentials" duration-ms="7982" started-at="2020-02-18T18:05:13Z" description="Validate Credentials" finished-at="2020-02-18T18:05:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCredentials -->
+        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.BookMyFurnitureTestCases@5649fd9b]" name="captureScreenshot" is-config="true" duration-ms="182" started-at="2020-02-18T18:05:21Z" finished-at="2020-02-18T18:05:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateCredentials status=SUCCESS method=BookMyFurnitureTestCases.validateCredentials()[pri:1, instance:test.BookMyFurnitureTestCases@5649fd9b] output={null}]]]>
+>>>>>>> 948b71c948102a6dcc76460ba5af29aae17fcdbd
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- logTestStatus -->
         <test-method status="PASS" signature="verifyPostMethod()[pri:2, instance:test.WebServiceAutomation@13deb50e]" name="verifyPostMethod" duration-ms="203" started-at="2020-02-20T01:10:00Z" description="Verify POST method" finished-at="2020-02-20T01:10:00Z">
           <reporter-output>
@@ -55,13 +90,34 @@
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=verifyGetMethod status=SUCCESS method=WebServiceAutomation.verifyGetMethod()[pri:3, instance:test.WebServiceAutomation@13deb50e] output={null}]]]>
+=======
+        </test-method> <!-- captureScreenshot -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.BookMyFurnitureTestCases@5649fd9b]" name="setUp" is-config="true" duration-ms="5671" started-at="2020-02-18T18:05:21Z" finished-at="2020-02-18T18:05:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="bookAFurniture()[pri:3, instance:test.BookMyFurnitureTestCases@5649fd9b]" name="bookAFurniture" duration-ms="10673" started-at="2020-02-18T18:05:27Z" description="Book a Furniture" finished-at="2020-02-18T18:05:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookAFurniture -->
+        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.BookMyFurnitureTestCases@5649fd9b]" name="captureScreenshot" is-config="true" duration-ms="1081" started-at="2020-02-18T18:05:38Z" finished-at="2020-02-18T18:05:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=bookAFurniture status=SUCCESS method=BookMyFurnitureTestCases.bookAFurniture()[pri:3, instance:test.BookMyFurnitureTestCases@5649fd9b] output={null}]]]>
+>>>>>>> 948b71c948102a6dcc76460ba5af29aae17fcdbd
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- logTestStatus -->
         <test-method status="PASS" signature="endReport()[pri:0, instance:test.WebServiceAutomation@13deb50e]" name="endReport" is-config="true" duration-ms="709" started-at="2020-02-20T01:10:00Z" finished-at="2020-02-20T01:10:01Z">
+=======
+        </test-method> <!-- captureScreenshot -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:test.BookMyFurnitureTestCases@5649fd9b]" name="endReport" is-config="true" duration-ms="1729" started-at="2020-02-18T18:05:39Z" finished-at="2020-02-18T18:05:40Z">
+>>>>>>> 948b71c948102a6dcc76460ba5af29aae17fcdbd
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
