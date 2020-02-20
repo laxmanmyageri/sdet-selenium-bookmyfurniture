@@ -12,7 +12,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
+
+import test.TestNgBase;
+
 public class BasePage {
+
 	
     public static void waitforElementThenClick(WebDriver driver, WebElement element) {
         try {
@@ -41,6 +46,7 @@ public class BasePage {
 		try {
 			File source = ts.getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(source, new File(CommonConstant.passedScreenshotPath + stepName +".png"));
+			TestNgBase.logger.pass("[Screenshots] "+stepName+ " :", MediaEntityBuilder.createScreenCaptureFromPath(CommonConstant.passedScreenshotPath+"/"+stepName+".png").build());
 			System.out.println("Screenshot taken");
 		} catch (Exception e) {
 			System.out.println("Exception while taking screenshot " + e.getMessage());

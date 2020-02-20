@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.BookMyFurnitureTestCases">
+      <class name="test.WebServiceAutomation">
         <methods>
-          <include name="bookAFurniture"/>
-          <include name="setUp"/>
-          <include name="captureScreenshot"/>
-          <include name="validateCredentials"/>
-          <include name="setExtentReport"/>
+          <include name="verifyPostMethod"/>
           <include name="endReport"/>
+          <include name="logTestStatus"/>
+          <include name="verifyPostMethodUsingPOJO"/>
+          <include name="verifyGetMethod"/>
+          <include name="setUpExtentReport"/>
         </methods>
-      </class> <!-- test.BookMyFurnitureTestCases -->
+      </class> <!-- test.WebServiceAutomation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

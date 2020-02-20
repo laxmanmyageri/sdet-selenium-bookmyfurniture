@@ -7,6 +7,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 
+import common.CommonConstant;
 import common.StaticConstants;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
@@ -70,7 +71,7 @@ public class WebServiceAutomation {
 		System.out.println("POJO --> POST Method - Response Body : " + resBody);
 		logger.log(Status.INFO, MarkupHelper.createLabel("Response Body : "+resBody, ExtentColor.WHITE));
 
-		Assert.assertEquals("Created", response.jsonPath().get("message"));
+		Assert.assertEquals(CommonConstant.expectedCreatedMsg, response.jsonPath().get("message"));
 	}
 
 	@Test(groups = { "regression" },priority = 2, description = "Verify POST method")
@@ -118,7 +119,7 @@ public class WebServiceAutomation {
 
 		// Success message validation
 		String message = response.jsonPath().get("message");
-		Assert.assertEquals("Created", message);
+		Assert.assertEquals(CommonConstant.expectedCreatedMsg, message);
 	}
 
 	@Test(groups = { "regression" }, priority = 3, description = "Verify GET method")
@@ -139,7 +140,7 @@ public class WebServiceAutomation {
 
 		// Success message validation
 		String message = response.jsonPath().get("message");
-		Assert.assertEquals("Product found", message);
+		Assert.assertEquals(CommonConstant.expectedFoundMsg, message);
 	}
 
 	@AfterMethod

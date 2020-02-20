@@ -19,6 +19,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
@@ -47,7 +48,7 @@ public class TestNgBase {
 	String urlName;
 	Properties prop;
 	Reporting extentReport;
-	public ExtentTest logger;
+	public static ExtentTest logger;
 
 	@BeforeTest
 	public void setExtentReport() {
@@ -87,19 +88,16 @@ public class TestNgBase {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		try {
 			if (ITestResult.SUCCESS == result.getStatus()) {
-				logger.log(Status.PASS,
-						MarkupHelper.createLabel(result.getName() + " ------ PASSED", ExtentColor.GREEN));
-				logger.addScreenCaptureFromPath(CommonConstant.passedScreenshotPath);
+				logger.log(Status.PASS, MarkupHelper.createLabel(result.getName() + " ------ PASSED", ExtentColor.GREEN));
 			} else if (ITestResult.FAILURE == result.getStatus()) {
 				File source = ts.getScreenshotAs(OutputType.FILE);
 				FileUtils.copyFile(source, new File(CommonConstant.failedScreenshotPath + "TestFailed" + ".png"));
 				logger.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " ------ FAILED", ExtentColor.RED));
 				logger.fail(result.getThrowable());
-				logger.addScreenCaptureFromPath(CommonConstant.failedScreenshotPath);
+				logger.pass("Screenshots :", MediaEntityBuilder.createScreenCaptureFromPath(CommonConstant.failedScreenshotPath+"TestFailed.png").build());
 				log.info("*****Test Case Failed : Failure screenshot taken*****");
 			} else if (ITestResult.SKIP == result.getStatus()) {
-				logger.log(Status.SKIP,
-						MarkupHelper.createLabel(result.getName() + " ------ SKIPPED", ExtentColor.ORANGE));
+				logger.log(Status.SKIP, MarkupHelper.createLabel(result.getName() + " ------ SKIPPED", ExtentColor.ORANGE));
 				logger.skip(result.getThrowable());
 			}
 		} catch (Exception e) {
