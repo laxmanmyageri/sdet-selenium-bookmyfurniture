@@ -102,7 +102,7 @@ public class BookMyFurnitureTestCases extends TestNgBase {
 	@Test(groups = { "regression", "functional" }, priority = 5, description = "Validate UI data with data available in database",enabled=true)
 	public void validateUIDataWithDatabase() throws SQLException {
 		logger = Reporting.extent.createTest("Selenium.TC005.Validate UI data with data available in database");
-		log.info("**********Selenium.TC005 - Verify Application in new tab**************");
+		log.info("**********Selenium.TC005 - Validate UI data with data available in database**************");
 		stmt = conn.createStatement();
 		String query = "select * from MENULIST";
 		resultSet = stmt.executeQuery(query);
