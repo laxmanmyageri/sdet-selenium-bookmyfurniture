@@ -1,6 +1,11 @@
 package test;
 
 import java.io.File;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -14,10 +19,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-
+import org.testng.annotations.BeforeSuite;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
@@ -49,11 +53,19 @@ public class TestNgBase {
 	Properties prop;
 	Reporting extentReport;
 	public static ExtentTest logger;
+	Connection conn = null;
+	Statement stmt = null;
+	ResultSet resultSet = null;
 
-	@BeforeTest
-	public void setExtentReport() {
+	@BeforeSuite
+	public void setExtentReport() throws ClassNotFoundException, SQLException {
+		prop = ReadPropertiesFile.readPropertiesFromConfigFile();
 		extentReport = new Reporting();
 		extentReport.setExtentReport();
+		
+		//Database Connection
+		Class.forName("com.mysql.jdbc.Driver");
+		conn = DriverManager.getConnection(prop.getProperty("dbPath"), prop.getProperty("dbUsername"), prop.getProperty("dbPassword"));
 	}
 
 	@BeforeMethod
@@ -94,7 +106,7 @@ public class TestNgBase {
 				FileUtils.copyFile(source, new File(CommonConstant.failedScreenshotPath + "TestFailed" + ".png"));
 				logger.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " ------ FAILED", ExtentColor.RED));
 				logger.fail(result.getThrowable());
-				logger.pass("Screenshots :", MediaEntityBuilder.createScreenCaptureFromPath(CommonConstant.failedScreenshotPath+"TestFailed.png").build());
+				logger.pass("[Screenshots] Failed:", MediaEntityBuilder.createScreenCaptureFromPath(CommonConstant.failedScreenshotPath+"TestFailed.png").build());
 				log.info("*****Test Case Failed : Failure screenshot taken*****");
 			} else if (ITestResult.SKIP == result.getStatus()) {
 				logger.log(Status.SKIP, MarkupHelper.createLabel(result.getName() + " ------ SKIPPED", ExtentColor.ORANGE));
@@ -107,8 +119,15 @@ public class TestNgBase {
 		log.info("*****Closed Browser*****");
 	}
 
-	@AfterTest
+	@AfterSuite
 	public void endReport() {
+		if (conn != null) {
+			 try {
+			 conn.close();
+			 } catch (Exception e) {
+				 log.error(e);
+			 }
+			 }
 		extentReport = new Reporting();
 		extentReport.endExtentReport();
 		StoreTestReports.copyReportsToSharedPath();

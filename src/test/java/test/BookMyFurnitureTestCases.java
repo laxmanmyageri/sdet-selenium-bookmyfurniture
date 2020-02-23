@@ -1,6 +1,7 @@
 package test;
 
 import java.awt.AWTException;
+import java.sql.SQLException;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
@@ -96,5 +97,16 @@ public class BookMyFurnitureTestCases extends TestNgBase {
 		homePage.openApplicationInNewWindow();
 		log.info("---Application Verified in new window---"); 
 		log.info("-----Executed Selenium.TC004 - Verify Application in new window------");
+	}
+	
+	@Test(groups = { "regression", "functional" }, priority = 5, description = "Validate UI data with data available in database",enabled=true)
+	public void validateUIDataWithDatabase() throws SQLException {
+		logger = Reporting.extent.createTest("Selenium.TC005.Validate UI data with data available in database");
+		stmt = conn.createStatement();
+		String query = "select * from MENULIST";
+		resultSet = stmt.executeQuery(query);
+		
+		homePage = new HomePage(driver);
+		homePage.validateUIDatawithDbData(resultSet);
 	}
 }

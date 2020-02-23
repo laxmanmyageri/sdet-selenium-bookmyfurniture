@@ -43,7 +43,8 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
 		<span class='report-name'>Automation Testing Report</span>
@@ -52,11 +53,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-<<<<<<< HEAD
-			<span class='label blue darken-3 suite-start-time'>Feb 19, 2020 07:09:56 PM</span>
-=======
-			<span class='label blue darken-3 suite-start-time'>Feb 18, 2020 06:05:04 PM</span>
->>>>>>> 948b71c948102a6dcc76460ba5af29aae17fcdbd
+			<span class='label blue darken-3 suite-start-time'>Feb 23, 2020 06:58:10 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -72,6 +69,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -114,14 +112,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-<<<<<<< HEAD
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> test(s) passed</span>
-=======
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> test(s) passed</span>
->>>>>>> 948b71c948102a6dcc76460ba5af29aae17fcdbd
+                    <span class='tooltipped' data-position='top' data-tooltip='87.5%'><span class='strong'>7</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -141,26 +135,15 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-<<<<<<< HEAD
 						<span class='test-name'>RestAssured.TC001.Verify POST method Using POJO Class</span>
-						<span class='test-time'>Feb 19, 2020 07:09:56 PM</span>
-=======
-						<span class='test-name'>Selenium.TC001.Validate Credentials</span>
-						<span class='test-time'>Feb 18, 2020 06:05:13 PM</span>
->>>>>>> 948b71c948102a6dcc76460ba5af29aae17fcdbd
+						<span class='test-time'>Feb 23, 2020 06:58:10 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-<<<<<<< HEAD
-	<span class='label start-time'>Feb 19, 2020 07:09:56 PM</span>
-	<span class='label end-time'>Feb 19, 2020 07:10:00 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+300ms</span>
-=======
-	<span class='label start-time'>Feb 18, 2020 06:05:13 PM</span>
-	<span class='label end-time'>Feb 18, 2020 06:05:21 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+981ms</span>
->>>>>>> 948b71c948102a6dcc76460ba5af29aae17fcdbd
+	<span class='label start-time'>Feb 23, 2020 06:58:10 PM</span>
+	<span class='label end-time'>Feb 23, 2020 06:58:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+857ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -172,26 +155,25 @@
 			</tr>
 		</thead>
 		<tbody>
-<<<<<<< HEAD
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>7:09:57 PM</td>
+				<td class='timestamp'>6:58:10 PM</td>
 				<td class='step-details'>
-						<span class='badge black-text white'>Request Body : io.restassured.internal.RequestSpecificationImpl@6f6745d6</span>
+						<span class='badge black-text white'>Request Body : io.restassured.internal.RequestSpecificationImpl@3975d064</span>
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>7:09:59 PM</td>
+				<td class='timestamp'>6:58:11 PM</td>
 				<td class='step-details'>
-						<span class='badge black-text white'>Response Body : {"message":"Created","httpStatus":"201 CREATED","httpStatusCode":201,"body":{"productId":718,"name":"Chair","color":"Blue","price":5999.0,"description":"Chair to sit","materialDescription":"Steel","warranty":1,"availability":true,"updateOn":"2020-02-20","createdOn":"2020-02-20","discount":10,"categoryName":"chair"},"success":true,"error":false}</span>
+						<span class='badge black-text white'>Response Body : {"message":"Created","httpStatus":"201 CREATED","httpStatusCode":201,"body":{"productId":873,"name":"Chair","color":"Blue","price":5999.0,"description":"Chair to sit","materialDescription":"Steel","warranty":1,"availability":true,"updateOn":"2020-02-23","createdOn":"2020-02-23","discount":10,"categoryName":"chair"},"success":true,"error":false}</span>
 					
 				</td>
 			</tr>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>7:10:00 PM</td>
+				<td class='timestamp'>6:58:12 PM</td>
 				<td class='step-details'>
 						<span class='badge white-text green'>verifyPostMethodUsingPOJO ------ PASSED </span>
 					
@@ -205,14 +187,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>RestAssured.TC002.Verify POST method</span>
-						<span class='test-time'>Feb 19, 2020 07:10:00 PM</span>
+						<span class='test-time'>Feb 23, 2020 06:58:12 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 19, 2020 07:10:00 PM</span>
-	<span class='label end-time'>Feb 19, 2020 07:10:00 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+203ms</span>
+	<span class='label start-time'>Feb 23, 2020 06:58:12 PM</span>
+	<span class='label end-time'>Feb 23, 2020 06:58:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+83ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -226,23 +208,23 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>7:10:00 PM</td>
+				<td class='timestamp'>6:58:12 PM</td>
 				<td class='step-details'>
-						<span class='badge black-text white'>Request Body : io.restassured.internal.RequestSpecificationImpl@77b325b3</span>
+						<span class='badge black-text white'>Request Body : io.restassured.internal.RequestSpecificationImpl@4014756c</span>
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>7:10:00 PM</td>
+				<td class='timestamp'>6:58:12 PM</td>
 				<td class='step-details'>
-						<span class='badge black-text white'>Response Body : {"message":"Created","httpStatus":"201 CREATED","httpStatusCode":201,"body":{"productId":719,"name":"Chair","color":"Blue","price":5999.0,"description":"Chair to sit","materialDescription":"Steel","warranty":1,"availability":true,"updateOn":"2020-02-20","createdOn":"2020-02-20","discount":10,"categoryName":"chair"},"success":true,"error":false}</span>
+						<span class='badge black-text white'>Response Body : {"message":"Created","httpStatus":"201 CREATED","httpStatusCode":201,"body":{"productId":874,"name":"Chair","color":"Blue","price":5999.0,"description":"Chair to sit","materialDescription":"Steel","warranty":1,"availability":true,"updateOn":"2020-02-23","createdOn":"2020-02-23","discount":10,"categoryName":"chair"},"success":true,"error":false}</span>
 					
 				</td>
 			</tr>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>7:10:00 PM</td>
+				<td class='timestamp'>6:58:12 PM</td>
 				<td class='step-details'>
 						<span class='badge white-text green'>verifyPostMethod ------ PASSED </span>
 					
@@ -256,14 +238,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>RestAssured.TC003.Verify GET method</span>
-						<span class='test-time'>Feb 19, 2020 07:10:00 PM</span>
+						<span class='test-time'>Feb 23, 2020 06:58:12 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 19, 2020 07:10:00 PM</span>
-	<span class='label end-time'>Feb 19, 2020 07:10:00 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+197ms</span>
+	<span class='label start-time'>Feb 23, 2020 06:58:12 PM</span>
+	<span class='label end-time'>Feb 23, 2020 06:58:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+48ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -277,23 +259,17 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>7:10:00 PM</td>
+				<td class='timestamp'>6:58:12 PM</td>
 				<td class='step-details'>
-						<span class='badge black-text white'>Response Body : {"message":"Product found","httpStatus":"302 FOUND","httpStatusCode":302,"body":{"pid":719,"name":"Chair","categoryId":{"id":2,"name":"chair","description":"chair to sit"},"color":"Blue","price":5999.0,"description":"Chair to sit","materialDescription":"Steel","warranty":1,"availability":true,"primaryImage":{"id":0,"pimage":null,"description":null,"title":null},"images":[],"updateOn":"2020-02-20","createdOn":"2020-02-20","discount":10},"success":true,"error":false}</span>
+						<span class='badge black-text white'>Response Body : {"message":"Product found","httpStatus":"302 FOUND","httpStatusCode":302,"body":{"pid":874,"name":"Chair","categoryId":{"id":2,"name":"chair","description":"chair to sit"},"color":"Blue","price":5999.0,"description":"Chair to sit","materialDescription":"Steel","warranty":1,"availability":true,"primaryImage":{"id":0,"pimage":null,"description":null,"title":null},"images":[],"updateOn":"2020-02-23","createdOn":"2020-02-23","discount":10},"success":true,"error":false}</span>
 					
 				</td>
 			</tr>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>7:10:00 PM</td>
+				<td class='timestamp'>6:58:12 PM</td>
 				<td class='step-details'>
 						<span class='badge white-text green'>verifyGetMethod ------ PASSED </span>
-=======
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>6:05:21 PM</td>
-				<td class='step-details'>
-						<span class='badge white-text green'>validateCredentials ------ PASSED</span>
 					
 				</td>
 			</tr>
@@ -302,17 +278,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'>Selenium.TC003.Book a furniture</span>
-						<span class='test-time'>Feb 18, 2020 06:05:27 PM</span>
+						<span class='test-name'>Selenium.TC001.Validate Credentials</span>
+						<span class='test-time'>Feb 23, 2020 06:58:15 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 18, 2020 06:05:27 PM</span>
-	<span class='label end-time'>Feb 18, 2020 06:05:38 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+675ms</span>
+	<span class='label start-time'>Feb 23, 2020 06:58:15 PM</span>
+	<span class='label end-time'>Feb 23, 2020 06:58:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+560ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -326,10 +302,250 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>6:05:38 PM</td>
+				<td class='timestamp'>6:58:16 PM</td>
 				<td class='step-details'>
-						<span class='badge white-text green'>bookAFurniture ------ PASSED</span>
->>>>>>> 948b71c948102a6dcc76460ba5af29aae17fcdbd
+						[Screenshots] Login :
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='file:///C:/M1022762-Workspace-Feb/sdet-selenium-bookmyfurniture/test-output/Screenshots/PassedTestsScreenshots//Login.png' src='file:///C:/M1022762-Workspace-Feb/sdet-selenium-bookmyfurniture/test-output/Screenshots/PassedTestsScreenshots//Login.png'>
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:58:22 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>validateCredentials ------ PASSED</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>Selenium.TC002.Verify Application in new tab</span>
+						<span class='test-time'>Feb 23, 2020 06:58:26 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 23, 2020 06:58:26 PM</span>
+	<span class='label end-time'>Feb 23, 2020 06:58:29 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+306ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:58:29 PM</td>
+				<td class='step-details'>
+						[Screenshots] ApplicationInNewTab :
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='file:///C:/M1022762-Workspace-Feb/sdet-selenium-bookmyfurniture/test-output/Screenshots/PassedTestsScreenshots//ApplicationInNewTab.png' src='file:///C:/M1022762-Workspace-Feb/sdet-selenium-bookmyfurniture/test-output/Screenshots/PassedTestsScreenshots//ApplicationInNewTab.png'>
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:58:29 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>verifyApplicationInNewTab ------ PASSED</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>Selenium.TC003.Book a furniture</span>
+						<span class='test-time'>Feb 23, 2020 06:58:33 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 23, 2020 06:58:33 PM</span>
+	<span class='label end-time'>Feb 23, 2020 06:59:06 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 32s+601ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:58:34 PM</td>
+				<td class='step-details'>
+						[Screenshots] Login :
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='file:///C:/M1022762-Workspace-Feb/sdet-selenium-bookmyfurniture/test-output/Screenshots/PassedTestsScreenshots//Login.png' src='file:///C:/M1022762-Workspace-Feb/sdet-selenium-bookmyfurniture/test-output/Screenshots/PassedTestsScreenshots//Login.png'>
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:58:35 PM</td>
+				<td class='step-details'>
+						[Screenshots] HomePage :
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='file:///C:/M1022762-Workspace-Feb/sdet-selenium-bookmyfurniture/test-output/Screenshots/PassedTestsScreenshots//HomePage.png' src='file:///C:/M1022762-Workspace-Feb/sdet-selenium-bookmyfurniture/test-output/Screenshots/PassedTestsScreenshots//HomePage.png'>
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:59:06 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>bookAFurniture ------ FAILED</span>
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:59:06 PM</td>
+				<td class='step-details'>
+						<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Next')]"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'azstorageexp', ip: '10.0.0.4', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\sdetlabs\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51248}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1dd3cd50b4239b168b70db7a12038d97
+*** Element info: {Using=xpath, value=//a[contains(text(),'Next')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.HomePage.chooseFurnitureType(HomePage.java:54)
+	at test.BookMyFurnitureTestCases.bookAFurniture(BookMyFurnitureTestCases.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</textarea>
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:59:06 PM</td>
+				<td class='step-details'>
+						[Screenshots] Failed:
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='file:///C:/M1022762-Workspace-Feb/sdet-selenium-bookmyfurniture/test-output/Screenshots/FailedTestsScreenshots/TestFailed.png' src='file:///C:/M1022762-Workspace-Feb/sdet-selenium-bookmyfurniture/test-output/Screenshots/FailedTestsScreenshots/TestFailed.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>Selenium.TC004.Verify Application in new window</span>
+						<span class='test-time'>Feb 23, 2020 06:59:10 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 23, 2020 06:59:10 PM</span>
+	<span class='label end-time'>Feb 23, 2020 06:59:14 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+223ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:59:14 PM</td>
+				<td class='step-details'>
+						[Screenshots] ApplicationInNewWindow :
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='file:///C:/M1022762-Workspace-Feb/sdet-selenium-bookmyfurniture/test-output/Screenshots/PassedTestsScreenshots//ApplicationInNewWindow.png' src='file:///C:/M1022762-Workspace-Feb/sdet-selenium-bookmyfurniture/test-output/Screenshots/PassedTestsScreenshots//ApplicationInNewWindow.png'>
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:59:14 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>verifyApplicationInNewWindow ------ PASSED</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>Selenium.TC005.Validate UI data with data available in database</span>
+						<span class='test-time'>Feb 23, 2020 06:59:18 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 23, 2020 06:59:18 PM</span>
+	<span class='label end-time'>Feb 23, 2020 06:59:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+254ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:59:19 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>validateUIDataWithDatabase ------ PASSED</span>
 					
 				</td>
 			</tr>
@@ -358,7 +574,107 @@
 	</div>
 	<!-- subview right -->
 </div>
-<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- test view --><!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Feb 23, 2020 06:58:33 PM</td>
+										<td class='linked' test-id='6'>Selenium.TC003.Book a furniture</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Next')]"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'azstorageexp', ip: '10.0.0.4', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\sdetlabs\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51248}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1dd3cd50b4239b168b70db7a12038d97
+*** Element info: {Using=xpath, value=//a[contains(text(),'Next')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.HomePage.chooseFurnitureType(HomePage.java:54)
+	at test.BookMyFurnitureTestCases.bookAFurniture(BookMyFurnitureTestCases.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -366,11 +682,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-<<<<<<< HEAD
-					<div class='panel-lead'>3</div>
-=======
-					<div class='panel-lead'>2</div>
->>>>>>> 948b71c948102a6dcc76460ba5af29aae17fcdbd
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -382,31 +694,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-<<<<<<< HEAD
-					<div class='panel-lead'>Feb 19, 2020 07:09:56 PM</div>
-=======
-					<div class='panel-lead'>Feb 18, 2020 06:05:04 PM</div>
->>>>>>> 948b71c948102a6dcc76460ba5af29aae17fcdbd
+					<div class='panel-lead'>Feb 23, 2020 06:58:10 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-<<<<<<< HEAD
-			 		<div class='panel-lead'>Feb 19, 2020 07:10:00 PM</div>
-=======
-			 		<div class='panel-lead'>Feb 18, 2020 06:05:39 PM</div>
->>>>>>> 948b71c948102a6dcc76460ba5af29aae17fcdbd
+			 		<div class='panel-lead'>Feb 23, 2020 06:59:19 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-<<<<<<< HEAD
-					<div class='panel-lead'>0h 0m 3s+848ms</div>
-=======
-					<div class='panel-lead'>0h 0m 34s+225ms</div>
->>>>>>> 948b71c948102a6dcc76460ba5af29aae17fcdbd
+					<div class='panel-lead'>0h 1m 8s+960ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -441,19 +741,14 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-<<<<<<< HEAD
-                parentCount: 3,
-				passParent: 3,
-=======
-                parentCount: 2,
-				passParent: 2,
->>>>>>> 948b71c948102a6dcc76460ba5af29aae17fcdbd
-				failParent: 0,
+                parentCount: 8,
+				passParent: 7,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -478,11 +773,7 @@
 		</script>
 		<script>
 			var timeline = {
-<<<<<<< HEAD
-			        "RestAssured.TC001.Verify POST method Using POJO Class":3.3,"RestAssured.TC002.Verify POST method":0.203,"RestAssured.TC003.Verify GET method":0.197
-=======
-			        "Selenium.TC001.Validate Credentials":7.981,"Selenium.TC003.Book a furniture":10.675
->>>>>>> 948b71c948102a6dcc76460ba5af29aae17fcdbd
+			        "RestAssured.TC001.Verify POST method Using POJO Class":1.857,"RestAssured.TC002.Verify POST method":0.083,"RestAssured.TC003.Verify GET method":0.048,"Selenium.TC001.Validate Credentials":6.56,"Selenium.TC002.Verify Application in new tab":3.306,"Selenium.TC003.Book a furniture":32.601,"Selenium.TC004.Verify Application in new window":4.223,"Selenium.TC005.Validate UI data with data available in database":0.254
 			};
 		</script>
 	
