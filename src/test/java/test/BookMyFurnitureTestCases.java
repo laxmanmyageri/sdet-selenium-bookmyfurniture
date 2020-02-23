@@ -53,7 +53,7 @@ public class BookMyFurnitureTestCases extends TestNgBase {
 	@Test(groups = { "End to end" }, priority = 3, description = "Book a Furniture", enabled=true)
 	public void bookAFurniture() throws Exception {
 		logger = Reporting.extent.createTest("Selenium.TC003.Book a furniture");
-		log.info("**********Selenium.TC004 - Book a furniture**************");
+		log.info("**********Selenium.TC003 - Book a furniture**************");
 		objLogin = new LoginPage(driver);
 		homePage = new HomePage(driver);
 		homePage.clickOnSignInLink();
@@ -92,7 +92,7 @@ public class BookMyFurnitureTestCases extends TestNgBase {
 	@Test(groups = { "regression", "functional" }, priority = 4, description = "Verify Application in new window with Action class",enabled=false)
 	public void verifyApplicationInNewWindow() throws AWTException, InterruptedException {
 		logger = Reporting.extent.createTest("Selenium.TC004.Verify Application in new window");
-		log.info("**********Selenium.TC002 - Verify Application in new tab**************");
+		log.info("**********Selenium.TC004 - Verify Application in new tab**************");
 		homePage = new HomePage(driver);
 		homePage.openApplicationInNewWindow();
 		log.info("---Application Verified in new window---"); 
@@ -102,11 +102,14 @@ public class BookMyFurnitureTestCases extends TestNgBase {
 	@Test(groups = { "regression", "functional" }, priority = 5, description = "Validate UI data with data available in database",enabled=true)
 	public void validateUIDataWithDatabase() throws SQLException {
 		logger = Reporting.extent.createTest("Selenium.TC005.Validate UI data with data available in database");
+		log.info("**********Selenium.TC005 - Verify Application in new tab**************");
 		stmt = conn.createStatement();
 		String query = "select * from MENULIST";
 		resultSet = stmt.executeQuery(query);
 		
 		homePage = new HomePage(driver);
 		homePage.validateUIDatawithDbData(resultSet);
+		log.info("---Validated UI data with data vailable in database---"); 
+		log.info("-----Executed Selenium.TC005 - Validate UI data with data available in database------");
 	}
 }
